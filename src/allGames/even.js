@@ -1,3 +1,4 @@
+import { randomInt } from 'crypto'
 import readlineSync from 'readline-sync'
 
 export const greetingUser = () => {
@@ -8,7 +9,8 @@ export const greetingUser = () => {
 }
 
 const getRandomNumber = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min
+  //   return Math.floor(Math.random() * (max - min + 1)) + min
+  return randomInt(min, max + 1)
 }
 
 const isEven = (num) => {
