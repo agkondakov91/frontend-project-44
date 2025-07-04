@@ -1,47 +1,62 @@
-import readline from 'readline-sync'
-
-let userName
-let randomNumber
+import readlineSync from 'readline-sync'
 
 export const greetingUser = () => {
   console.log('Welcome to the Brain Games!')
-  const name = readline.question('May I have your name? ')
-  userName = name
-  console.log(`Hello, ${name}`)
-  return name
+  const userName = readlineSync.question('May I have your name? ')
+  console.log(`Hello, ${userName}!`)
+  return userName
 }
 
-export const ascQuestion = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".')
-  randomNumber = Math.floor(Math.random() * 100) + 1
-  const userAnswer = readline.question(
-    `Question: ${randomNumber}\nYour answer: `,
+const getRandomNumber = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+const isEven = (num) => {
+  return num % 2 === 0 ? 'yes' : 'no'
+}
+
+export const askQuestion = () => {
+  const randomNumber = getRandomNumber(1, 100)
+  const answer = readlineSync
+    .question(`Question: ${randomNumber}\nYour answer: `)
+    .toLowerCase()
+  return { answer, randomNumber }
+}
+
+export const checkAnswer = (answer, randomNumber, userName) => {
+  const correctAnswer = isEven(randomNumber)
+  if (answer !== 'yes' && answer !== 'no') {
+    console.log(
+      `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
+    )
+    console.log(`Let's try again, ${userName}`)
+    return false
+  }
+
+  if (answer === correctAnswer) {
+    console.log('Correct!')
+    return true
+  }
+
+  console.log(
+    `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
   )
-  return userAnswer
+  console.log(`Let's try again, ${userName}`)
+  return false
 }
 
-export const checkAnswer = (answer) => {
-  if (randomNumber % 2 === 0) {
-    if (answer === 'yes') {
-      console.log('Correct!')
-      return true
+export const playGame = () => {
+  const round = 3
+  const userName = greetingUser()
+  console.log('Answer "yes" if the number is even, otherwise answer "no".')
+  let correctAnswer = 0
+  while (correctAnswer < round) {
+    const { answer, randomNumber } = askQuestion()
+    if (!checkAnswer(answer, randomNumber, userName)) {
+      return
     }
-
-    console.log(
-      `'${answer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`,
-    )
-    return false
+    correctAnswer += 1
   }
 
-  if (randomNumber % 2 !== 0) {
-    if (answer === 'no') {
-      console.log('Correct!')
-      return true
-    }
-
-    console.log(
-      `'${answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`,
-    )
-    return false
-  }
+  console.log(`Congratulations, ${userName}!`)
 }

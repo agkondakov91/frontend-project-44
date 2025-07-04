@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { greetingUser, ascQuestion, checkAnswer } from '../src/allGames/even.js'
-import { playGame } from '../src/play.js'
+import { playGame } from '../src/allGames/even.js'
 
-playGame(greetingUser, ascQuestion, checkAnswer)
+playGame()
