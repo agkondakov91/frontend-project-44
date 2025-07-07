@@ -9,7 +9,7 @@
 # Brain Games
 
 Brain Games is a set of console-based mini-games to test your logic and quick thinking.
-This project includes the "Brain Even" and "Brain Calc" games.
+This project includes the "Brain Even", "Brain Calc", and "Brain GCD" games.
 
 ## Installation
 
@@ -38,6 +38,7 @@ This project includes the "Brain Even" and "Brain Calc" games.
 - `brain-games`: Displays a welcome message.
 - `brain-even`: Starts the "Brain Even" game.
 - `brain-calc`: Starts the "Brain Calc" game.
+- `brain-gcd`: Starts the "Brain GCD" game.
 
 ## Brain Even Game
 
@@ -63,3 +64,13 @@ In the "Brain Calc" game, you are shown a random mathematical expression (e.g., 
 Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
 
 [demo brain-calc](https://asciinema.org/a/lDqgBpnDZzaev5ACrYJyZcMva)
+
+## Brain GCD Game
+
+In the "Brain GCD" game, you are shown two random numbers (e.g., `25 50`, `100 52`, `3 9`) and must provide their greatest common divisor (GCD). You need to answer three questions correctly in a row to win.
+
+### Demo (Brain GCD)
+
+Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
+
+[demo brain-gcd](https://asciinema.org/a/k3EAOEGgHDoaaWBu32NKczx5M)
