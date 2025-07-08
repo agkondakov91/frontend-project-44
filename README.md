@@ -9,7 +9,7 @@
 # Brain Games
 
 Brain Games is a set of console-based mini-games to test your logic and quick thinking.
-This project includes the "Brain Even", "Brain Calc", and "Brain GCD" games.
+This project includes the "Brain Even", "Brain Calc", "Brain GCD", and "Brain Progression" games.
 
 ## Installation
 
@@ -33,12 +33,17 @@ This project includes the "Brain Even", "Brain Calc", and "Brain GCD" games.
 
 4. Link the commands:
 
+```bash
+   npm link
+```
+
 ## Available Commands
 
-- `brain-games`: Displays a welcome message.
-- `brain-even`: Starts the "Brain Even" game.
-- `brain-calc`: Starts the "Brain Calc" game.
-- `brain-gcd`: Starts the "Brain GCD" game.
+- `brain-games`: Displays a welcome message,
+- `brain-even`: Starts the "Brain Even" game,
+- `brain-calc`: Starts the "Brain Calc" game,
+- `brain-gcd`: Starts the "Brain GCD" game,
+- `brain-progression`: Starts the "Brain Progression" game.
 
 ## Brain Even Game
 
@@ -74,3 +79,13 @@ In the "Brain GCD" game, you are shown two random numbers (e.g., `25 50`, `100 5
 Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
 
 [demo brain-gcd](https://asciinema.org/a/k3EAOEGgHDoaaWBu32NKczx5M)
+
+## Brain Progression Game
+
+In the "Brain Progression" game, you are shown an arithmetic progression with one number replaced by .. (e.g., `5 7 9 11 13 .. 17 19 21 23`). You must determine the missing number. You need to answer three questions correctly in a row to win.
+
+### Demo (Brain Progression)
+
+Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
+
+[demo brain-progression](https://asciinema.org/a/nijQqIpqeOSvA17AKUC79ng0n)
