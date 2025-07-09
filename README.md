@@ -9,7 +9,7 @@
 # Brain Games
 
 Brain Games is a set of console-based mini-games to test your logic and quick thinking.
-This project includes the "Brain Even", "Brain Calc", "Brain GCD", and "Brain Progression" games.
+This project includes the "Brain Even", "Brain Calc", "Brain GCD", "Brain Progression" and "Brain Prime" games.
 
 ## Installation
 
@@ -43,7 +43,8 @@ This project includes the "Brain Even", "Brain Calc", "Brain GCD", and "Brain Pr
 - `brain-even`: Starts the "Brain Even" game,
 - `brain-calc`: Starts the "Brain Calc" game,
 - `brain-gcd`: Starts the "Brain GCD" game,
-- `brain-progression`: Starts the "Brain Progression" game.
+- `brain-progression`: Starts the "Brain Progression" game,
+- `brain-prime`: Starts the "Brain Prime" game.
 
 ## Brain Even Game
 
@@ -89,3 +90,18 @@ In the "Brain Progression" game, you are shown an arithmetic progression with on
 Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
 
 [demo brain-progression](https://asciinema.org/a/nijQqIpqeOSvA17AKUC79ng0n)
+
+## Brain Prime Game
+
+In the "Brain Prime" game, you are shown a random number (e.g., `7`, `15`, `11`) and must answer:
+
+- `yes` if the number is prime.
+- `no` if the number is not prime.
+
+You need to answer three questions correctly in a row to win. Any incorrect or invalid input counts as a wrong answer.
+
+### Demo (Brain Prime)
+
+Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
+
+[demo brain-prime](https://asciinema.org/a/Pj0mI1meijsQWY4JnPcf8bk0P)

@@ -44,6 +44,6 @@ export const checkAnswer = (answer, questionData, userName) => {
   console.log(
     `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
   )
-  console.log(`Let's try again, ${userName}`)
+  console.log(`Let's try again, ${userName}!`)
   return false
 }
