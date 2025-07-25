@@ -59,7 +59,7 @@ You need to answer three questions correctly in a row to win. Any incorrect or i
 
 Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
 
-[demo brain-even](https://asciinema.org/a/yQLUZctLgTTdxrVfubrY4Qpmr)
+[demo brain-even](https://asciinema.org/a/h1Ys24z2zXYq2cGlsq2rFwVA6)
 
 ## Brain Calc Game
 
@@ -69,7 +69,7 @@ In the "Brain Calc" game, you are shown a random mathematical expression (e.g., 
 
 Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
 
-[demo brain-calc](https://asciinema.org/a/lDqgBpnDZzaev5ACrYJyZcMva)
+[demo brain-calc](https://asciinema.org/a/LtMbdfIPcYtH8NRnZRW43cso5)
 
 ## Brain GCD Game
 
@@ -79,7 +79,7 @@ In the "Brain GCD" game, you are shown two random numbers (e.g., `25 50`, `100 5
 
 Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
 
-[demo brain-gcd](https://asciinema.org/a/k3EAOEGgHDoaaWBu32NKczx5M)
+[demo brain-gcd](https://asciinema.org/a/YCOAPIdMQWOOuAGJhJh7uqvE3)
 
 ## Brain Progression Game
 
@@ -89,7 +89,7 @@ In the "Brain Progression" game, you are shown an arithmetic progression with on
 
 Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
 
-[demo brain-progression](https://asciinema.org/a/nijQqIpqeOSvA17AKUC79ng0n)
+[demo brain-progression](https://asciinema.org/a/IKdXJREyn0Ll5XN6IxweEKjjM)
 
 ## Brain Prime Game
 
@@ -104,4 +104,4 @@ You need to answer three questions correctly in a row to win. Any incorrect or i
 
 Watch the demo on asciinema to see the installation process, a winning game, and a losing game.
 
-[demo brain-prime](https://asciinema.org/a/Pj0mI1meijsQWY4JnPcf8bk0P)
+[demo brain-prime](https://asciinema.org/a/biOOGyvuehQa62aRSimyxFYOu)
