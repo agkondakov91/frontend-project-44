@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync'
 import { getRandomNumber } from '../index.js'
 
-const isEven = (num) => num % 2 === 0
+const isEven = num => num % 2 === 0
 
 export const askQuestion = () => {
   const randomNumber = getRandomNumber(1, 100)
@@ -21,7 +21,7 @@ export const checkAnswer = (answer, questionData, userName) => {
   }
 
   console.log(
-    `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
+    `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
   )
   console.log(`Let's try again, ${userName}!`)
   return false
