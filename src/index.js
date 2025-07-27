@@ -1,10 +1,9 @@
-import readlineSync from 'readline-sync'
+import { getName } from './cli.js'
 import { randomInt } from 'crypto'
 
 export const greetingUser = () => {
   console.log('Welcome to the Brain Games!')
-  const userName = readlineSync.question('May I have your name? ')
-  console.log(`Hello, ${userName}!`)
+  const userName = getName()
   return userName
 }
 
