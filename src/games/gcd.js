@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-import { getRandomNumber } from '../index.js'
+import { getRandomNumber, printResult } from '../index.js'
 
 const getGreatestCommonDivisor = (a, b) => {
   if (b === 0) return Math.abs(a)
@@ -18,14 +18,5 @@ export const checkAnswer = (answer, questionData, userName) => {
   const { num1, num2 } = questionData
   const correctAnswer = getGreatestCommonDivisor(num1, num2).toString()
 
-  if (answer === correctAnswer) {
-    console.log('Correct!')
-    return true
-  }
-
-  console.log(
-    `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
-  )
-  console.log(`Let's try again, ${userName}!`)
-  return false
+  return printResult(answer, correctAnswer, userName)
 }

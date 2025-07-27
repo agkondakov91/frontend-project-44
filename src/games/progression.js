@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-import { getRandomNumber } from '../index.js'
+import { getRandomNumber, printResult } from '../index.js'
 
 const getNumberProgression = (start, step, length) => {
   const progression = []
@@ -30,14 +30,5 @@ export const checkAnswer = (answer, questionData, userName) => {
   const { start, step, hiddenIndex } = questionData
   const correctAnswer = (start + hiddenIndex * step).toString()
 
-  if (answer === correctAnswer) {
-    console.log('Correct!')
-    return true
-  }
-
-  console.log(
-    `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
-  )
-  console.log(`Let's try again, ${userName}!`)
-  return false
+  return printResult(answer, correctAnswer, userName)
 }

@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-import { getRandomNumber } from '../index.js'
+import { getRandomNumber, printResult } from '../index.js'
 
 const operators = ['+', '-', '*']
 
@@ -36,14 +36,5 @@ export const checkAnswer = (answer, questionData, userName) => {
   const { num1, num2, operator } = questionData
   const correctAnswer = calculate(num1, num2, operator).toString()
 
-  if (answer === correctAnswer) {
-    console.log('Correct!')
-    return true
-  }
-
-  console.log(
-    `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
-  )
-  console.log(`Let's try again, ${userName}!`)
-  return false
+  return printResult(answer, correctAnswer, userName)
 }
