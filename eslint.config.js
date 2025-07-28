@@ -4,6 +4,9 @@ import { defineConfig } from 'eslint/config'
 import stylistic from '@stylistic/eslint-plugin'
 
 export default defineConfig([
+  {
+    ignores: ['__tests__/**', 'coverage/**'],
+  },
   js.configs.recommended,
   stylistic.configs['disable-legacy'],
   {
