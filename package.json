@@ -5,7 +5,7 @@
   "description": "[![Actions Status](https://github.com/agkondakov91/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/agkondakov91/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "bin": {
     "brain-games": "bin/brain-games.js",

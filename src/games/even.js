@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync'
 import { getRandomNumber, printResult } from '../index.js'
 
-const isEven = num => num % 2 === 0
+export const isEven = num => num % 2 === 0
 
 export const askQuestion = () => {
   const randomNumber = getRandomNumber(1, 100)
