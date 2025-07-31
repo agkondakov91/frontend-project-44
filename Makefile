@@ -15,6 +15,6 @@ brain-prime:
 publish:
 	npm publish --dry-run
 lint:
-	npx eslint . --ignore-pattern "__tests__/*"
+	npx eslint .
 fix:
 	npx eslint . --fix
