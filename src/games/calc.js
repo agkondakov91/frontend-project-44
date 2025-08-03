@@ -3,12 +3,12 @@ import { getRandomNumber, printResult } from '../index.js'
 
 const operators = ['+', '-', '*']
 
-const getRandomOperator = () => {
+export const getRandomOperator = () => {
   const index = getRandomNumber(0, operators.length - 1)
   return operators[index]
 }
 
-const calculate = (num1, num2, operator) => {
+export const calculate = (num1, num2, operator) => {
   switch (operator) {
     case '+':
       return num1 + num2
