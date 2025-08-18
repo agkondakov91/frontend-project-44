@@ -44,7 +44,7 @@ This project includes the "Brain Even", "Brain Calc", "Brain GCD", "Brain Progre
 
 ## Brain Even Game
 
-In the ${\color{green}"Brain Even"}$ game, you are shown a random number and must answer:
+In the "Brain Even" game, you are shown a random number and must answer:
 
 - `yes` if the number is even.
 - `no` if the number is odd.
